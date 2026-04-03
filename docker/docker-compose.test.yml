@@ -1,0 +1,14 @@
+services:
+  app:
+    environment:
+      - CHAT_DATABASE_URL=postgresql+asyncpg://chat:chat@db:5432/chat_test
+      - CHAT_REDIS_URL=redis://redis:6379/10
+      - CHAT_DEBUG=false
+    command: pytest --cov=src --cov-report=term-missing -v
+
+  db:
+    environment:
+      POSTGRES_DB: chat_test
+
+  redis:
+    command: redis-server --databases 16
