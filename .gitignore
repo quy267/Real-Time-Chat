@@ -96,3 +96,9 @@ worktrees/
 /.venv/
 /plans/
 /.idea/
+CLAUDE.md
+AGENTS.md
+release-manifest.json
+.coverage
+.repomixignore
+alembic.ini
