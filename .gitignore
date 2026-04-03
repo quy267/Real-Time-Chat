@@ -102,3 +102,4 @@ release-manifest.json
 .coverage
 .repomixignore
 alembic.ini
+spec.md
